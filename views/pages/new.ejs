@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Head partial -->
+  <% include ../partials/head %>
+</head>
+<body>
+<header>
+  <!-- Header partial -->
+</header>
+<main>
+  <div class="ui grid container">
+    <div class="ui two column centered grid">
+      <form action="/create" method="post" enctype="multipart/form-data" class="ui form">
+        <div class="field">
+          <label>Title</label>
+          <input type="text" name="title" placeholder="Title">
+        </div>
+        <div class="field">
+          <label>Description</label>
+          <textarea rows="4" name="description" placeholder="description"></textarea>
+        </div>
+        <div class="field">
+          <label>Image</label>
+          <input type="file" name="image">
+        </div>
+        <button class="ui primary button" type="submit">Post</button>
+      </form>
+    </div>
+  </div>
+</main>
+<!-- Scripts partials -->
+<% incude ../partials/scripts %>
+</body>
+</html>
