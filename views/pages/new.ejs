@@ -6,11 +6,13 @@
 </head>
 <body>
 <header>
-  <!-- Header partial -->
+  <!-- Header partial (nav bar)-->
+  <% include ../partials/header %>
 </header>
 <main>
   <div class="ui grid container">
     <div class="ui two column centered grid">
+      <!-- Enctype is multipart to support file upload (POST) -->
       <form action="/create" method="post" enctype="multipart/form-data" class="ui form">
         <div class="field">
           <label>Title</label>
